@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?a462460ffc5eab201ebaea25896ec6d8") format("truetype"),
+url("./flaticon.woff?a462460ffc5eab201ebaea25896ec6d8") format("woff"),
+url("./flaticon.woff2?a462460ffc5eab201ebaea25896ec6d8") format("woff2"),
+url("./flaticon.eot?a462460ffc5eab201ebaea25896ec6d8#iefix") format("embedded-opentype"),
+url("./flaticon.svg?a462460ffc5eab201ebaea25896ec6d8#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "collaboration": "\f101",
+    "inspection": "\f102",
+    "analysis": "\f103",
+    "handshake": "\f104",
+);
+
+.flaticon-collaboration:before {
+    content: map-get($flaticon-map, "collaboration");
+}
+.flaticon-inspection:before {
+    content: map-get($flaticon-map, "inspection");
+}
+.flaticon-analysis:before {
+    content: map-get($flaticon-map, "analysis");
+}
+.flaticon-handshake:before {
+    content: map-get($flaticon-map, "handshake");
+}

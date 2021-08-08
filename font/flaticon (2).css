@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?a93e7e02aaa033e3039584ba22607a93") format("truetype"),
+url("./flaticon.woff?a93e7e02aaa033e3039584ba22607a93") format("woff"),
+url("./flaticon.woff2?a93e7e02aaa033e3039584ba22607a93") format("woff2"),
+url("./flaticon.eot?a93e7e02aaa033e3039584ba22607a93#iefix") format("embedded-opentype"),
+url("./flaticon.svg?a93e7e02aaa033e3039584ba22607a93#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-team:before {
+    content: "\f101";
+}
+.flaticon-salary:before {
+    content: "\f102";
+}
+.flaticon-planet-earth:before {
+    content: "\f103";
+}
+.flaticon-rating:before {
+    content: "\f104";
+}
